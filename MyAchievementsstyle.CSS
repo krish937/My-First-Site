@@ -1,0 +1,8 @@
+table,tr,th,td{
+	border:2px solid grey;
+	margin:auto;
+	background-color:#bad2db;}
+	caption{
+	color:orange;font-weight:bold;}
+	.content hr{
+	height:5px;border-width:3px;border-color:#34eba4;background-color:gray;}
