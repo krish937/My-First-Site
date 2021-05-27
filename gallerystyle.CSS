@@ -1,0 +1,75 @@
+body{
+    background-color: #d8c8de;}
+    h1{
+        text-align: center; 
+        color: brown;
+        font-family: Jokerman;
+    }
+
+
+
+.head_section {
+margin-left: 250px;
+margin-right: 250px;
+width: 80%;
+height: 20%;
+
+}
+
+
+ img {
+    width: 50%;
+    height: 20%;
+    border: 2px dotted blueviolet;
+
+}
+
+.main_section {
+    margin: 5px;
+    margin-bottom: 40px;
+    border: 1px solid rgb(0, 155, 160);
+    float: left;
+    width: 320px;
+    height: auto;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+
+
+}
+
+
+.main_section img {
+
+    width: 90%;
+    height: 50%;
+
+
+}
+
+
+
+#heading {
+    font-weight: bold;
+    font-size: larger;
+    font-family: cursive;
+    color: rgb(16, 90, 16)
+}
+
+
+.desc {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.sub_titles {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    color: rgb(80, 14, 167);
+}
+
+
+
+
+
