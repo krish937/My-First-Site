@@ -60,6 +60,7 @@
           <li><a class="nav-link scrollto" href="#resume">My Gallery</a></li>
           <li><a class="nav-link scrollto" href="#services">My Dream Vacation</a></li>
           <li><a class="nav-link scrollto" href="#portfolio">Know Your State</a></li>
+	  <li><a class="nav-link scrollto" href="#JavaScript">My Java Script Projeccts</a></li>
           
              
           <li><a class="nav-link scrollto" href="#contact">Contact Me</a></li>
@@ -537,6 +538,94 @@
 
       </div>
     </section><!-- End Portfolio Section -->
+
+    <!-- ======= JavaScript Section ======= -->
+    <hr>
+    <section id="JavaScript" class="JavaScript"></section>
+
+    <h1 style="text-align: center">My Java Script Projects:</h1><br><br>
+
+    <h1 style="text-align: center">Check if any Year is a Leap Year: </h1>
+    <form style = "background-color: lightgray; margin: auto; width: 500px; padding: 10px;">
+        Enter the year to check if it is a leap year or not: <br><br>
+    <input id= "inputyear" placeholder="Year" type="number" oninput="checkleapyear(this.value)">
+    <span id="output"></span>
+    </form>
+
+    
+    
+    <script>
+        function checkleapyear(valNum) {
+            year = parseInt(valNum)
+            isleap = year % 100 === 0 ? year % 400 === 0 : year % 4 === 0;
+            if (isleap == true) {
+                document.getElementById("output").innerHTML = valNum + " is a leap year";
+            } else {
+                document.getElementById("output").innerHTML = valNum + " is not a leap year";
+            }
+        }
+    </script><br><hr><br>
+
+<h1 style="text-align: center">A Multiplication table</h1>
+        
+<form style = "background-color: lightskyblue; margin: auto; width: 500px; padding: 10px;">
+    <label>Enter a number you want the tables for: </label>
+    <input id= "input_num"  placeholder="--Enter Number Here--" type="number" min="1" ><br><br>
+    <input value="Submit" id= "submit1" type="button" onclick="create_table()">
+</form>
+
+<div id="multtable">
+    <table id="mytable" cell_padding="5px"></table>
+</div>
+<script>
+    function create_table(rows) {
+        var j=1;
+        rows=document.getElementById("input_num").value;
+        output_row = document.createElement("tr");
+        document.getElementById("mytable").appendChild(output_row);
+        output_td = document.createElement("td");
+
+        while(j<= 10) {
+            output_td = document.createElement('td');
+            output_td.innerHTML = rows * j;
+            output_row.appendChild(output_td)
+            j=j+1;
+
+        }
+        document.getElementById('mytable').style.display = "block"
+    }
+
+</script><br><hr><br>
+
+<h1 style="text-align: center;">Hover over the Image to make it bigger: </h1>
+        
+        <img src="costa rica.jpeg" id="images" onmouseover="chngImage1()" onmouseout="chngImage2()" onclick= "normal()" style="margin-left: 300px;"><br>
+        
+        <script>
+            
+            function chngImage2() {
+                document.getElementById("images").style.width = "15vw";
+                document.getElementById("images").style.height = "15vh";
+
+
+            }
+            function chngImage1() {
+                document.getElementById("images").style.width = "60vw";
+                document.getElementById("images").style.height = "75vh";
+
+            }
+            function normal() {
+                document.getElementById("images").style.height = "27vh";
+                document.getElementById("images").style.width = "27vw";
+
+            }
+
+            
+        </script>
+
+<br><br>
+
+    <!-- End JavaScript Section -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact section-bg">
